@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Células — Juntos para crescer, amar e alcançar vidas!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@1,700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --emanuel: #191970;
+        --atos2: #2E8B57;
+        --ohana: #8B008B;
+        --agape: #E91E63;
+        --dynamus: #FF8C00;
+        --ebenezer: #008B8B;
+        --promessa: #DAA520;
+        --bg: #070d1a;
+        --bg2: #0c1830;
+        --glass: rgba(255,255,255,0.07);
+        --glass-border: rgba(255,255,255,0.13);
+        --white: #ffffff;
+        --muted: rgba(255,255,255,0.55);
+      }
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      body {
+        font-family: 'Outfit', sans-serif;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--white);
+        overflow-x: hidden;
+      }
+
+      /* ── HERO ── */
+      .hero {
+        position: relative;
+        overflow: hidden;
+        padding: 4rem 1.5rem 3.5rem;
+        text-align: center;
+        background: linear-gradient(160deg, rgba(5,8,18,0.82) 0%, rgba(8,16,38,0.78) 50%, rgba(5,8,18,0.82) 100%), url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIbGNtcwIQAABtbnRyUkdCIFhZWiAH4gADABQACQAOAB1hY3NwTVNGVAAAAABzYXdzY3RybAAAAAAAAAAAAAAAAAAA9tYAAQAAAADTLWhhbmSdkQA9QICwPUB0LIGepSKOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAAF9jcHJ0AAABDAAAAAx3dHB0AAABGAAAABRyWFlaAAABLAAAABRnWFlaAAABQAAAABRiWFlaAAABVAAAABRyVFJDAAABaAAAAGBnVFJDAAABaAAAAGBiVFJDAAABaAAAAGBkZXNjAAAAAAAAAAV1UkdCAAAAAAAAAAAAAAAAdGV4dAAAAABDQzAAWFlaIAAAAAAAAPNUAAEAAAABFslYWVogAAAAAAAAb6AAADjyAAADj1hZWiAAAAAAAABilgAAt4kAABjaWFlaIAAAAAAAACSgAAAPhQAAtsRjdXJ2AAAAAAAAACoAAAB8APgBnAJ1A4MEyQZOCBIKGAxiDvQRzxT2GGocLiBDJKwpai5+M+s5sz/WRldNNlR2XBdkHWyGdVZ+jYgskjacq6eMstu+mcrH12Xkd/H5////2wBDAAkGBwgHBgkICAgKCgkLDhcPDg0NDhwUFREXIh4jIyEeICAlKjUtJScyKCAgLj8vMjc5PDw8JC1CRkE6RjU7PDn/2wBDAQoKCg4MDhsPDxs5JiAmOTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTk5OTn/wAARCAJkAmQDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDjKKKK3PWCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooqS3gluZ44II2klkYIiqMkknAFAD7KzuL+6jtrWF5p5DhUQZJr1DQfhXbi28zWbiRp2H+rgYBU/Huf0+tdJ4I8JW/huwDOqyahKP30vXH+yvt/P8qsWPi3TL/xFJottJvljjLeYD8hYHlR6kdfwNZuTexx1K0paQPFvF+h/wDCPa7NYB2eIAPE7dSp9f1H4Vi1658YtFNxYW+rxLlrY+XL/uE8H8D/AOhV5HVp3R0Up80UFFFFM0CiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAClVS7BVBZicADqTSV3fwl0JdR1p9RnQNDY4Kg95D0/IZP5UN2JnLljcoH4d+JfsyziyRiwz5YlXcPqCf61h3+iarp2TeadcwqP4mjIX8+le9a94l0vw+1uNRnMZnzswpbp1Jx25FQ/8Jf4cltZJjqtoYwvzKzYYj/dPJ/KoUmc0a9Tex8916X8HtCSaefWp0BEJ8qDI/ix8x/IgfiawfDfhOXxbqV7cWxFnpyythiuSMnIUDuQMV7B4Z0SLw/o8WnxSmUIWYyEYLEknp+n4USZVequXlW5zHxT8TvpVimmWchW7ulJdgeY4+nHuen4GvJdI1CbStTtr+3P72Bww56+oPsRkfjW343e41jxxfRW6PNL5ohjRBk/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H7rwb4htrghpLNZ1kgmA6gHO0/7VezSeINIhsVvZNRtlt2GQ/mDn6dyfbrRLe6HWd5KUTk/Cfw3tNNKXWrFbu6HzCID90h/9mP149q3/ABT4r07w1a5nYSXLD93bofmb6+g9/wCdcV4n+KLOHttCiKDobmUc/wDAV/qfyrza5uJrqd7i4leWZzlncksT7mmk3qxxpSm+aZe8Qa5e6/qDXl7JluiIPuovoBWZRRVnWkkrIKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKBk1pdXFlcJcWszwzIcq6HBFekeHPim6KsGt25fH/LxCOf8AgS/4flXB6RoWqazIU0+zlnA4LAYUfVjxXWW3wp1qRA011ZRH+7uZiP0xUuxhU9m/iPTtN8RaJq6AWmoW0u7/AJZs21v++TzUPiDVLDwrpcl8LeFA0iApGApkyQDj1IGT+FeU6r8N/EGnxtLHHFeIOv2diWx/ukAn8M1yUjS52SM+UyNrH7vtS5UzKNCMtU9D6MjfSvE+j5AivLKcYIP8j6EfmK8X8feG4vDerJDbStJbzpvQP95eSMH1+tZeh6/qegztLp1y0W77yEbkb6g0t7d6t4n1TzZBLeXjgKqxrnAHYAdBTUbMuFJwle+hl0V21h8MPEF0geX7Nagj7sshLfkoP86ZqXw08QWUZkiSC8UckQv835EDP4U+ZGvtYXtc4yipJ4ZbeVopo3jkQ4ZHBUj65qOmXcKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAK9H8CfD0X8MWp6wrC3f5orfODIPVvQe3f+fKeC9KTWfEtlZyruhLb5R6qoyQfrjH419BTyxWlu80rBIokLMT0AAyf0qJPoc1eo17sRIIYLO3WKCOOGGMYCqAqqK5/UfHnhzT5jDJfiWQHDCFS4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6IfCgoooplBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB23ws1+PSNae1uXCW96Am49Fcfd598kflXsGraba6xp8tjeR74ZRgjOCD2IPYivmmvQPB/wAR7jTUjstXV7m1XCrMOZIx7/3h+v1qJR6o5q1Jt80TO8WeAdR0LfcW+68sRz5ij50H+0P6jj6VykEEtzMsMEbyyscKiKWJ+gr6V0/ULPU7VbmzuI54XHDKc/8A6voaljt4IiWjijRj1KqBmkptELEySs0eV+D/AIazvPFe64BHEpDLag5ZvTd6D2/lXqF/eQabYzXdzII4IULMx7AVneIfFGleH4i17cAy4ysCcyN+Hb6nArxvxf4xvvEsojcfZ7FGykCnOfdj3P8AKizkSozrO72MfWb99U1W7vnG1riVn2/3QTwPwFUqKK0O5KysFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAWrHUb3TpPMsrue3c9TE5XP1xWlN4v8QzR+W+r3e3/ZfafzFYdFFhOKe6HO7yOXdmZyclmOSabRRQMKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoooo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xh+LOj7ciwvifQhMf+hVj6n8WbmRCmnackJPR5n3n8hj+dKzYvZ1ZbnpesavZaLZPd30yxRqOM9WPoB3NeC+LfENx4k1ZruUFIl+WGLP3F/x9apatq1/rFz9o1C5eeTtu6KPQDoBVGrjGx00qKhq9woooqjYKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigYUUUUCCiiigYUUUUCCiiigAooooAKKKKACiitfw74c1HxDdeTZRfIv+slfhE+p/oOaAbUdzIorv5IvBvhX93Ora7qK/eAP7pD6en/oRqtL8Q5sGK20LSYbc/8ALNoS354xn8qVzPnb2WhxNFdJrNvaanog1+ys1snW4+z3NvGf3e4jIZfQdiK5uncuMrhRRRQUFFFFAgooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKBhRRRQIKKKKACiiigYUUUUCCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKBhRRRQI0vDmkya5rNtp8bbfNb5m/uqBkn8v1rpfF3iaO0ibw54fxbadb5SWSP70zdG59PX1+lZfgHU4dL8SwS3LBIZVaFn/ALm7ofzxWXrWlXejahLZ3kZWRDw2OHHZh6g0upk1eepR71vaB4R1bXCHigMFoPvXE3yoB3x6/h+lP0TxfeaRaLbJZ2FyI8+U88O54xnOAQRxnJqPWvFeueINsNzcMYicCCFdqn8ByfxzRqU+bpoXvFmo6da6bb+HNFbzrW3k82e5x/rpcY49h/h6ZPJ1bvNNvdPWJry0ntxKCUMqFN2OuM/WqlMcEktAooooKCiiigAooooAKKKKBhRUiQyyI7pG7JGMuVUkKPf0qOgQUUUUAFFFFABRRRQAUUUUDCiiigQUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUVoeHntotd0+S8x9mW4QyE9AuR19qAbsrnZaN4WTS4bc3Wltqes3ah4rRgRDbof4pT0/D8PesHx7ZWFhrvkWXlKwiX7SkOfLSX+ILnoO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KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z') center/cover no-repeat;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute; inset: 0;
+        background:
+          radial-gradient(ellipse 60% 50% at 20% 80%, rgba(25,25,112,0.35) 0%, transparent 60%),
+          radial-gradient(ellipse 50% 40% at 80% 20%, rgba(46,139,87,0.15) 0%, transparent 55%),
+          radial-gradient(ellipse 40% 60% at 50% 50%, rgba(233,30,99,0.08) 0%, transparent 60%);
+        pointer-events: none;
+      }
+
+      /* animated dots pattern */
+      .hero::after {
+        content: '';
+        position: absolute; inset: 0;
+        background-image: radial-gradient(circle, rgba(255,255,255,0.06) 1px, transparent 1px);
+        background-size: 28px 28px;
+        pointer-events: none;
+      }
+
+      .hero-inner { position: relative; z-index: 2; max-width: 700px; margin: 0 auto; }
+
+      .hero-icon {
+        width: 80px; height: 80px;
+        margin: 0 auto 1.25rem;
+        background: var(--glass);
+        border: 1.5px solid var(--glass-border);
+        border-radius: 24px;
+        display: flex; align-items: center; justify-content: center;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      }
+
+      .hero-icon svg { width: 44px; height: 44px; }
+
+      .hero h1 {
+        font-size: clamp(2.8rem, 8vw, 5.5rem);
+        font-weight: 900;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-transform: uppercase;
+        background: linear-gradient(135deg, #fff 30%, #a8c4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 0.6rem;
+      }
+
+      .hero-sub {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: clamp(1rem, 3vw, 1.3rem);
+        color: var(--muted);
+        margin-bottom: 2rem;
+        letter-spacing: 0.2px;
+      }
+
+      .hero-sub span {
+        color: #f0b840;
+      }
+
+      .hero-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .hero-chip {
+        padding: 0.3rem 0.9rem;
+        border-radius: 999px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border: 1px solid;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        background: transparent;
+        color: var(--white);
+      }
+      .hero-chip:hover, .hero-chip.active { color: #fff; }
+
+      .chip-all { border-color: rgba(255,255,255,0.3); }
+      .chip-all:hover, .chip-all.active { background: rgba(255,255,255,0.15); }
+      .chip-adultos { border-color: var(--atos2); color: #6de8a0; }
+      .chip-adultos:hover, .chip-adultos.active { background: var(--atos2); color: #fff; }
+      .chip-jovens { border-color: var(--ohana); color: #df87df; }
+      .chip-jovens:hover, .chip-jovens.active { background: var(--ohana); color: #fff; }
+      .chip-adolescentes { border-color: var(--dynamus); color: #ffc06d; }
+      .chip-adolescentes:hover, .chip-adolescentes.active { background: var(--dynamus); color: #fff; }
+      .chip-senhoras { border-color: var(--agape); color: #f884b0; }
+      .chip-senhoras:hover, .chip-senhoras.active { background: var(--agape); color: #fff; }
+
+      /* ── SEARCH ── */
+      .search-wrap {
+        max-width: 480px;
+        margin: 2rem auto 0;
+        padding: 0 1.5rem;
+        position: relative;
+        z-index: 10;
+      }
+      .search-wrap svg {
+        position: absolute;
+        left: 2.8rem; top: 50%;
+        transform: translateY(-50%);
+        color: var(--muted);
+        pointer-events: none;
+      }
+      .search-box {
+        width: 100%;
+        padding: 0.85rem 1.25rem 0.85rem 3.2rem;
+        border-radius: 999px;
+        border: 1px solid var(--glass-border);
+        background: var(--glass);
+        backdrop-filter: blur(12px);
+        color: var(--white);
+        font-size: 0.95rem;
+        font-family: 'Outfit', sans-serif;
+        transition: all 0.3s;
+      }
+      .search-box::placeholder { color: var(--muted); }
+      .search-box:focus { outline: none; border-color: rgba(168,196,255,0.4); box-shadow: 0 0 0 3px rgba(168,196,255,0.1); }
+
+      /* ── GRID ── */
+      main {
+        max-width: 1240px;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem 5rem;
+      }
+
+      .count-label {
+        font-size: 0.8rem;
+        color: var(--muted);
+        text-align: center;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.25rem;
+      }
+
+      /* ── CARD ── */
+      .card {
+        background: var(--glass);
+        border: 1px solid var(--glass-border);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.35s cubic-bezier(.175,.885,.32,1.275), box-shadow 0.35s ease, border-color 0.35s ease;
+        animation: fadeUp 0.5s ease forwards;
+        opacity: 0;
+      }
+
+      .card:nth-child(1)  { animation-delay: 0.05s; }
+      .card:nth-child(2)  { animation-delay: 0.10s; }
+      .card:nth-child(3)  { animation-delay: 0.15s; }
+      .card:nth-child(4)  { animation-delay: 0.20s; }
+      .card:nth-child(5)  { animation-delay: 0.25s; }
+      .card:nth-child(6)  { animation-delay: 0.30s; }
+      .card:nth-child(7)  { animation-delay: 0.35s; }
+
+      .card:hover { transform: translateY(-6px); }
+
+      /* card accent band */
+      .card-band {
+        height: 5px;
+        width: 100%;
+      }
+
+      .card-body { padding: 1.25rem 1.4rem 1.4rem; }
+
+      .card-header {
+        display: flex;
+        align-items: center;
+        gap: 0.9rem;
+        margin-bottom: 1.1rem;
+      }
+
+      .cell-icon {
+        width: 48px; height: 48px;
+        border-radius: 14px;
+        display: flex; align-items: center; justify-content: center;
+        flex-shrink: 0;
+        font-size: 1.4rem;
+      }
+
+      .card-title-wrap { flex: 1; min-width: 0; }
+
+      .card-num {
+        font-size: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 0.1rem;
+      }
+
+      .card-title {
+        font-size: 1.3rem;
+        font-weight: 800;
+        letter-spacing: -0.3px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .card-badge {
+        font-size: 0.68rem;
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 0.25rem 0.65rem;
+        border-radius: 999px;
+        flex-shrink: 0;
+      }
+
+      /* divider */
+      .card-divider {
+        height: 1px;
+        background: var(--glass-border);
+        margin: 0.9rem 0;
+      }
+
+      /* info rows */
+      .info-list { display: flex; flex-direction: column; gap: 0.55rem; margin-bottom: 1.1rem; }
+
+      .info-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 0.6rem;
+        font-size: 0.875rem;
+        line-height: 1.4;
+      }
+
+      .info-icon {
+        width: 18px; height: 18px;
+        flex-shrink: 0;
+        margin-top: 1px;
+        opacity: 0.75;
+      }
+
+      .info-label {
+        font-weight: 600;
+        color: var(--muted);
+        margin-right: 0.25rem;
+        white-space: nowrap;
+      }
+
+      .info-val { color: rgba(255,255,255,0.88); }
+
+      /* WhatsApp button */
+      .wa-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        width: 100%;
+        padding: 0.85rem;
+        border-radius: 12px;
+        border: none;
+        color: #fff;
+        font-family: 'Outfit', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+      .wa-btn::after {
+        content: '';
+        position: absolute; inset: 0;
+        background: linear-gradient(90deg, transparent, rgba(255,255,255,0.18), transparent);
+        transform: translateX(-100%);
+        transition: transform 0.55s ease;
+      }
+      .wa-btn:hover::after { transform: translateX(100%); }
+      .wa-btn:hover { transform: scale(1.02); box-shadow: 0 8px 24px rgba(0,0,0,0.35); }
+      .wa-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+      /* per-cell color overrides */
+      .c-emanuel .card-band        { background: var(--emanuel); }
+      .c-emanuel .cell-icon        { background: rgba(25,25,112,0.3); }
+      .c-emanuel .card-title       { color: #9fa8da; }
+      .c-emanuel .card-badge       { background: rgba(25,25,112,0.35); color: #9fa8da; border: 1px solid rgba(25,25,112,0.6); }
+      .c-emanuel .wa-btn           { background: linear-gradient(135deg, var(--emanuel), #0f0f50); }
+      .c-emanuel:hover             { border-color: rgba(25,25,112,0.55); box-shadow: 0 20px 40px rgba(0,0,0,0.35), 0 0 30px rgba(25,25,112,0.25); }
+
+      .c-atos2 .card-band          { background: var(--atos2); }
+      .c-atos2 .cell-icon          { background: rgba(46,139,87,0.25); }
+      .c-atos2 .card-title         { color: #6de8a0; }
+      .c-atos2 .card-badge         { background: rgba(46,139,87,0.25); color: #6de8a0; border: 1px solid rgba(46,139,87,0.5); }
+      .c-atos2 .wa-btn             { background: linear-gradient(135deg, var(--atos2), #1e5c39); }
+      .c-atos2:hover               { border-color: rgba(46,139,87,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(46,139,87,0.2); }
+
+      .c-ohana .card-band          { background: var(--ohana); }
+      .c-ohana .cell-icon          { background: rgba(139,0,139,0.25); }
+      .c-ohana .card-title         { color: #df87df; }
+      .c-ohana .card-badge         { background: rgba(139,0,139,0.25); color: #df87df; border: 1px solid rgba(139,0,139,0.5); }
+      .c-ohana .wa-btn             { background: linear-gradient(135deg, var(--ohana), #5a005a); }
+      .c-ohana:hover               { border-color: rgba(139,0,139,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(139,0,139,0.2); }
+
+      .c-agape .card-band          { background: var(--agape); }
+      .c-agape .cell-icon          { background: rgba(233,30,99,0.2); }
+      .c-agape .card-title         { color: #f884b0; }
+      .c-agape .card-badge         { background: rgba(233,30,99,0.2); color: #f884b0; border: 1px solid rgba(233,30,99,0.45); }
+      .c-agape .wa-btn             { background: linear-gradient(135deg, var(--agape), #b0154a); }
+      .c-agape:hover               { border-color: rgba(233,30,99,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(233,30,99,0.2); }
+
+      .c-dynamus .card-band        { background: var(--dynamus); }
+      .c-dynamus .cell-icon        { background: rgba(255,140,0,0.2); }
+      .c-dynamus .card-title       { color: #ffc06d; }
+      .c-dynamus .card-badge       { background: rgba(255,140,0,0.2); color: #ffc06d; border: 1px solid rgba(255,140,0,0.45); }
+      .c-dynamus .wa-btn           { background: linear-gradient(135deg, var(--dynamus), #cc7000); }
+      .c-dynamus:hover             { border-color: rgba(255,140,0,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(255,140,0,0.2); }
+
+      .c-ebenezer .card-band       { background: var(--ebenezer); }
+      .c-ebenezer .cell-icon       { background: rgba(0,139,139,0.22); }
+      .c-ebenezer .card-title      { color: #7ddede; }
+      .c-ebenezer .card-badge      { background: rgba(0,139,139,0.22); color: #7ddede; border: 1px solid rgba(0,139,139,0.45); }
+      .c-ebenezer .wa-btn          { background: linear-gradient(135deg, var(--ebenezer), #006666); }
+      .c-ebenezer:hover            { border-color: rgba(0,139,139,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(0,139,139,0.2); }
+
+      .c-promessa .card-band       { background: var(--promessa); }
+      .c-promessa .cell-icon       { background: rgba(218,165,32,0.2); }
+      .c-promessa .card-title      { color: #f0d070; }
+      .c-promessa .card-badge      { background: rgba(218,165,32,0.2); color: #f0d070; border: 1px solid rgba(218,165,32,0.45); }
+      .c-promessa .wa-btn          { background: linear-gradient(135deg, var(--promessa), #b8860b); }
+      .c-promessa:hover            { border-color: rgba(218,165,32,0.5); box-shadow: 0 20px 40px rgba(0,0,0,0.3), 0 0 30px rgba(218,165,32,0.2); }
+
+      /* no results */
+      .no-results {
+        display: none;
+        text-align: center;
+        padding: 4rem 1rem;
+        color: var(--muted);
+        font-size: 1rem;
+      }
+      .no-results svg { display: block; margin: 0 auto 1rem; opacity: 0.35; }
+
+      /* footer tagline */
+      .footer-tag {
+        text-align: center;
+        padding: 2rem 1rem 3.5rem;
+        color: var(--muted);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--glass-border);
+      }
+      .footer-tag strong { color: rgba(255,255,255,0.7); }
+
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(24px); }
+        to   { opacity: 1; transform: translateY(0); }
+      }
+
+      @media (max-width: 600px) {
+        .grid { grid-template-columns: 1fr; }
+        .hero { padding: 3rem 1rem 2.5rem; }
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-icon">
+          <!-- house + heart icon -->
+          <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 20L24 6L40 20V42H30V30H18V42H8V20Z" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M24 34C24 34 18 29.5 18 26C18 23.8 19.8 22 22 22C23 22 24 22.6 24 22.6C24 22.6 25 22 26 22C28.2 22 30 23.8 30 26C30 29.5 24 34 24 34Z" fill="#E91E63"/>
+          </svg>
+        </div>
+        <h1>Células</h1>
+        <p class="hero-sub">Juntos para crescer, amar e <span>alcançar vidas!</span></p>
+
+        <div class="hero-chips">
+          <button class="hero-chip chip-all active" data-filter="all">Todas</button>
+          <button class="hero-chip chip-adultos" data-filter="adultos">Mista Adultos</button>
+          <button class="hero-chip chip-jovens" data-filter="jovens">Mista Jovens</button>
+          <button class="hero-chip chip-adolescentes" data-filter="adolescentes">Mista Adolescentes</button>
+          <button class="hero-chip chip-senhoras" data-filter="senhoras">Senhoras</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEARCH -->
+    <div class="search-wrap">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+      </svg>
+      <input class="search-box" id="searchBox" type="text" placeholder="Buscar célula, líder ou bairro…" />
+    </div>
+
+    <!-- CARDS -->
+    <main>
+      <p class="count-label" id="countLabel">7 células disponíveis</p>
+      <div class="grid" id="grid">
+
+        <!-- 1. EMANUEL -->
+        <div class="card c-emanuel" data-filter="adultos" data-search="emanuel alex elaine felomão isabel barra nova mista adultos">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">📖</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 01</div>
+                <div class="card-title">Emanuel</div>
+              </div>
+              <div class="card-badge">Mista Adultos</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span class="info-label">Líderes:</span>
+                <span class="info-val">Evangelistas Alex e Elaine</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriões:</span>
+                <span class="info-val">Felomão e Isabel</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Rua Vinícius de Moraes, LT 14, QD 83, Barra Nova</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">21 99529-2068</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/5521995292068?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Emanuel%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Alex
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. ATOS 2 -->
+        <div class="card c-atos2" data-filter="adultos" data-search="atos 2 wellington renata jaconé mista adultos">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">🌿</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 02</div>
+                <div class="card-title">Atos 2</div>
+              </div>
+              <div class="card-badge">Mista Adultos</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span class="info-label">Líderes:</span>
+                <span class="info-val">Wellington e Renata</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriões:</span>
+                <span class="info-val">Os mesmos</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Rua 103, n 266 casa 01, Jaconé</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">21 96496-1505</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/5521964961505?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Atos%202%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Wellington
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. OHANA -->
+        <div class="card c-ohana" data-filter="jovens" data-search="ohana joão pedro laís barra nova loteamento manitiba mista jovens">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">🌺</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 03</div>
+                <div class="card-title">Ohana</div>
+              </div>
+              <div class="card-badge">Mista Jovens</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span class="info-label">Líderes:</span>
+                <span class="info-val">Dcs João Pedro e Laís</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriões:</span>
+                <span class="info-val">Os mesmos</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Rua B, LT 13, QD 12, Loteamento Manitiba, Barra Nova</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">22 98833-6985</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/5522988336985?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Ohana%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com João Pedro
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. ÁGAPE -->
+        <div class="card c-agape" data-filter="senhoras" data-search="ágape agape katia vera barra nova avenida litorânea senhoras">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">💖</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 04</div>
+                <div class="card-title">Ágape</div>
+              </div>
+              <div class="card-badge">Senhoras</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span class="info-label">Líderes:</span>
+                <span class="info-val">Dcs Kátia e Vera</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriã:</span>
+                <span class="info-val">Dc Vera</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Avenida Litorânea, 5332, Barra Nova</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">21 98610-7255</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/5521986107255?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Ágape%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Kátia
+            </a>
+          </div>
+        </div>
+
+        <!-- 5. DYNAMUS -->
+        <div class="card c-dynamus" data-filter="adolescentes" data-search="dynamus jorge salomão katerine samir keli barra nova manitiba mista adolescentes">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">⚡</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 05</div>
+                <div class="card-title">Dynamus</div>
+              </div>
+              <div class="card-badge">Mista Adolescentes</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span class="info-label">Líderes:</span>
+                <span class="info-val">Jorge Salomão e Katerine</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriões:</span>
+                <span class="info-val">Samir e Keli</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Rua B, LT 12, QD 11, Loteamento Manitiba, Barra Nova</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">41 9925-3731</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/554199253731?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Dynamus%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Jorge Salomão
+            </a>
+          </div>
+        </div>
+
+        <!-- 6. EBENÉZER -->
+        <div class="card c-ebenezer" data-filter="adultos" data-search="ebenézer ebenezer rilton gerusa barra nova ioazareth mista adultos">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">🏔️</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 06</div>
+                <div class="card-title">Ebenézer</div>
+              </div>
+              <div class="card-badge">Mista Adultos</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+                <span class="info-label">Líderes:</span>
+                <span class="info-val">Rilton e Gerusa</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriã:</span>
+                <span class="info-val">Gerusa</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Av Nossa Senhora de Ioazareth, LT 06, QD 30, Barra Nova</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">22 99602-6225</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/5522996026225?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Ebenézer%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Rilton
+            </a>
+          </div>
+        </div>
+
+        <!-- 7. PROMESSA -->
+        <div class="card c-promessa" data-filter="adultos" data-search="promessa verônica luis carlos penha barra nova nazareth mista adultos">
+          <div class="card-band"></div>
+          <div class="card-body">
+            <div class="card-header">
+              <div class="cell-icon">👑</div>
+              <div class="card-title-wrap">
+                <div class="card-num">Célula 07</div>
+                <div class="card-title">Promessa</div>
+              </div>
+              <div class="card-badge">Mista Adultos</div>
+            </div>
+            <div class="card-divider"></div>
+            <div class="info-list">
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                <span class="info-label">Líder:</span>
+                <span class="info-val">Dc Verônica</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+                <span class="info-label">Anfitriões:</span>
+                <span class="info-val">Luis Carlos e Penha</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span class="info-label">Endereço:</span>
+                <span class="info-val">Av. Nossa Senhora de Nazareth, 7.513, sobrado, Barra Nova</span>
+              </div>
+              <div class="info-row">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                <span class="info-label">Contato:</span>
+                <span class="info-val">21 97029-9045</span>
+              </div>
+            </div>
+            <a class="wa-btn" href="https://wa.me/5521970299045?text=Olá%2C%20vim%20saber%20mais%20sobre%20a%20célula%20Promessa%21" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar com Verônica
+            </a>
+          </div>
+        </div>
+
+      </div><!-- /grid -->
+
+      <div class="no-results" id="noResults">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor"><path d="M11 2C6.48 2 2 6.48 2 11s4.48 9 9 9 9-4.03 9-9-4.03-9-9-9zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+        Nenhuma célula encontrada.
+      </div>
+    </main>
+
+    <footer class="footer-tag">
+      <strong>Uma célula perto de você</strong> — um lar para o seu coração! 🏠
+    </footer>
+
+    <script>
+      const searchBox  = document.getElementById('searchBox');
+      const countLabel = document.getElementById('countLabel');
+      const noResults  = document.getElementById('noResults');
+      const cards      = Array.from(document.querySelectorAll('.card'));
+      const chips      = Array.from(document.querySelectorAll('.hero-chip'));
+
+      let activeFilter = 'all';
+      let searchTerm   = '';
+
+      function update() {
+        let visible = 0;
+        cards.forEach(card => {
+          const matchFilter = activeFilter === 'all' || card.dataset.filter === activeFilter;
+          const matchSearch = card.dataset.search.includes(searchTerm.toLowerCase().trim());
+          const show = matchFilter && matchSearch;
+          card.style.display = show ? '' : 'none';
+          if (show) visible++;
+        });
+        countLabel.textContent = visible === 0
+          ? ''
+          : visible === 1
+            ? '1 célula encontrada'
+            : visible + ' células disponíveis';
+        noResults.style.display = visible === 0 ? 'block' : 'none';
+      }
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeFilter = chip.dataset.filter;
+          update();
+        });
+      });
+
+      searchBox.addEventListener('input', e => {
+        searchTerm = e.target.value;
+        update();
+      });
+    </script>
+  </body>
+</html>
